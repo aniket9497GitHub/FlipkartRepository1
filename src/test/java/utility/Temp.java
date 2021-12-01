@@ -40,5 +40,35 @@ public class Temp
 		  //click on login
 		  driver.findElement(By.xpath("(//*[@type='submit'])[2]")).click();
 		  
+		//click on manage address
+		  driver.findElement(By.xpath("//*[text()='Manage Addresses']")).click();
+		  
+		  //click on add new address
+		  driver.findElement(By.xpath("//*[@class='_1QhEVk']")).click();
+		  
+		  //name
+		  driver.findElement(By.xpath("//*[@name='name']")).sendKeys("Aniket Deshmukh");
+		  
+		  //mobile number
+		  driver.findElement(By.xpath("//*[@name='phone']")).sendKeys("9890935583");
+		  
+		  //pincode
+		  driver.findElement(By.xpath("//*[@name='pincode']")).sendKeys("422003");
+		  
+		  //locality
+		  driver.findElement(By.xpath("//*[@name='addressLine2']")).sendKeys("Panchavati");
+		  
+		  //address
+		  driver.findElement(By.xpath("//*[@name='addressLine1']")).sendKeys("Flat No=5, Shree Samartha Appt, Damodar Nagar,Opposite Rajlaxmi Bank, Hirawadi Road");
+		  
+		  //select Home
+		  driver.findElement(By.xpath("(//*[@class='_1XFPmK'])[1]")).click();
+		  
+		  //click on save
+		  driver.findElement(By.xpath("//*[@tabindex='10']")).click();
+		
+		  
+		  
+		  
 	  }	  
 }
